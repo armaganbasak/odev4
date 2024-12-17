@@ -21,11 +21,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Odev4Theme {
-                val navController = rememberNavController() // NavController oluştur
+                val navController = rememberNavController()
                 Scaffold { padding ->
                     NavHost(
                         navController = navController,
-                        startDestination = "AnaSayfa", // Başlangıç ekranı
+                        startDestination = "AnaSayfa",
                         modifier = Modifier.padding(padding)
                     ) {
                         composable("AnaSayfa") {
